@@ -1,5 +1,5 @@
-# nii2dcm
-This gear tags files following dcm2niix conversion for visual QC reader tasks
+# Visual QC Reader Tagging
+This gear tags acquisition containers with the 'read' label for visual QC reader tasks
 
 ## Overview
 
@@ -54,10 +54,11 @@ MIT License
 
 ### Outputs
 
+No outputs
 
 #### Metadata
 
-No metadata currently created by this gear
+Adds 'read' label to aquistion container if the file needs to be reviewed as part of the visual QC process.
 
 ### Pre-requisites
 
@@ -95,9 +96,8 @@ A picture and description of the workflow
   graph LR;
     A[T2w]:::input --> FW;
     FW[FW] --> D2N;
-    D2N((dcm2niix)):::gear --> CISO;
-    CISO((recon)):::gear --> N2D;
-    N2D[nii2dcm]:::container;
+    D2N((dcm2niix)):::gear --> Autotagger;
+   
     
     classDef container fill:#57d,color:#fff
     classDef input fill:#7a9,color:#fff
