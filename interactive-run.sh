@@ -2,7 +2,7 @@
 
 GEAR=fw-autotagger
 IMAGE=flywheel/autotagger:0.0.1
-LOG=autotagger-0.0.1-65fd4d950aa9007ce357f264 
+LOG=autotagger-0.0.1-66f530e70f89dd1869a4baf6
 
 # Command:
 docker run -it --rm --entrypoint bash\
