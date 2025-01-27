@@ -47,7 +47,7 @@
     },
     "gear-builder": {
       "category": "utility",
-      "image": "flywheel/autotagger:0.0.3"
+      "image": "flywheel/autotagger:0.0.5"
     },
     "kcl-app-binary": "app/main.sh",
     "kcl-app-modalities": [
@@ -88,5 +88,5 @@
   "name": "autotagger",
   "source": "",
   "url": "https://github.com/Nialljb/fw-autotagger",
-  "version": "0.0.3"
+  "version": "0.0.5"
 }

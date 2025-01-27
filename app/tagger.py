@@ -30,7 +30,7 @@ def process_nifti(file_obj, modality: str):
         modality: The modality being processed (e.g., T2w, T1w).
     """
     # Check if the file is a NIfTI file
-    if file_obj.name.endswith(('.nii', '.nii.gz')):
+    if file_obj.type == 'nifti':
         if not file_obj.tags:
             file_obj.add_tag('read')
             print(file_obj.name, f"'read' tag added for {modality}")
