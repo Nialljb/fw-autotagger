@@ -33,7 +33,7 @@ def process_nifti(file_obj, modality: str, subject):
     if file_obj.type == 'nifti':
         if not file_obj.tags:
             file_obj.add_tag('read')
-            print(file_obj.name, f"'read' tag added for {modality}")
+            print(f"subject {subject}, {file_obj.name}: 'read' tag added for {modality}")
         else:
             # Add 'read' tag only if none of the QC tags are present
             if not any(tag in file_obj.tags for tag in ['read', 'QC_unclear', 'QC_failed', 'QC_passed']):
