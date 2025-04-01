@@ -1,8 +1,8 @@
 #!/usr/bin/env bash 
 
 GEAR=fw-autotagger
-IMAGE=flywheel/autotagger:0.0.1
-LOG=autotagger-0.0.1-65fd4d950aa9007ce357f264 
+IMAGE=flywheel/autotagger:0.0.5
+LOG=autotagger-0.0.5-6797aa1bf0f25ec05793e6ef
 
 # Command:
 docker run -it --rm --entrypoint bash\

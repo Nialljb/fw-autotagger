@@ -11,11 +11,12 @@ log = logging.getLogger(__name__)
 # Define main function
 def main(context: GearToolkitContext) -> None:
 
+    
     # Get the input files
-    T2wQC, T1wQC, FLAIRQC, ADCQC = parse_config(context)
+    input, T2wQC, T1wQC, FLAIRQC, ADCQC = parse_config(context)
     
     # Run the nii2dcm function
-    tagger(T2wQC, T1wQC, FLAIRQC, ADCQC)
+    tagger(input, T2wQC, T1wQC, FLAIRQC, ADCQC)  
 
 # Only execute if file is run as main, not when imported by another module
 if __name__ == "__main__":  # pragma: no cover

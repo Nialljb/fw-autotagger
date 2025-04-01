@@ -13,12 +13,14 @@ def parse_config(
     Returns:
         Tuple of input, dcm, out, series, desc
     """
+
     # input = gear_context.get_input_path("input")
+    input = gear_context.get_input("input")
     T2wQC = gear_context.config.get("T2w-QC")
     T1wQC = gear_context.config.get("T1w-QC")
     FLAIRQC = gear_context.config.get("FLAIR-QC")
     ADCQC = gear_context.config.get("ADC-QC")
 
-    return T2wQC, T1wQC, FLAIRQC, ADCQC
+    return input, T2wQC, T1wQC, FLAIRQC, ADCQC
 
 
